@@ -20,7 +20,7 @@ Selenium 3.141.59
 Execute test
 
 ```bash
-Just run the test you want to execute
+Just run the test you want to execute (Right click -> run)
 ```
 
 ## License
