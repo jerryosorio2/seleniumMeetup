@@ -29,12 +29,10 @@ public class ExampleVersion2ExplicitWait {
     @Test(priority = 0)
     public void testFindByIdAndName() {
         driver.get("http://www.google.com/");
-        WebElement searchBox = driver.findElement(By.id("lst-ib")); //Find By Id
-        wait.until(ExpectedConditions.visibilityOf(searchBox));
+        WebElement searchBox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='a4bIc']/input")));
         highlightElement(searchBox);
         searchBox.sendKeys("Selenium Web Driver");
-        WebElement searchButton = driver.findElement(By.name("btnK")); //Find By Name
-        wait.until(ExpectedConditions.visibilityOf(searchBox));
+        WebElement searchButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("btnK"))); //Find By Name
         wait.until(ExpectedConditions.elementToBeClickable(searchBox));
         highlightElement(searchButton);
         searchButton.submit();
@@ -42,13 +40,11 @@ public class ExampleVersion2ExplicitWait {
 
     @Test(priority = 1)
     public void testFindByPartialLinkTextAndClass() {
-        WebElement searchResult = driver.findElement(By.partialLinkText("Selenium WebDriver")); //Find By partialLinkText
-        wait.until(ExpectedConditions.visibilityOf(searchResult));
+        WebElement searchResult = wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("Selenium WebDriver"))); //Find By partialLinkText
         wait.until(ExpectedConditions.elementToBeClickable(searchResult));
         highlightElement(searchResult);
         searchResult.click();
-        WebElement downloadButton = driver.findElement(By.className("downloadBox")); //Find By partialLinkText
-        wait.until(ExpectedConditions.visibilityOf(downloadButton));
+        WebElement downloadButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='nav-item'][1]"))); //Find By Xpath
         wait.until(ExpectedConditions.elementToBeClickable(downloadButton));
         highlightElement(downloadButton);
         downloadButton.click();

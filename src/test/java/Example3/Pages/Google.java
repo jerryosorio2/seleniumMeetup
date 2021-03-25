@@ -20,7 +20,7 @@ public class Google {
     }
 
     //Mapping web elements
-    @FindBy(id = "lst-ib")
+    @FindBy(xpath = "//div[@class='a4bIc']/input")
     private WebElement searchBox;
 
     @FindBy(name = "btnK")

@@ -26,7 +26,7 @@ public class ExampleVersion2ImplicitWait {
     @Test(priority = 0)
     public void testFindByIdAndName() {
         driver.get("http://www.google.com/");
-        WebElement searchBox = driver.findElement(By.id("lst-ib")); //Find By Id
+        WebElement searchBox = driver.findElement(By.xpath("//div[@class='a4bIc']/input")); //Find By Xpath
         highlightElement(searchBox);
         searchBox.sendKeys("Selenium Web Driver");
         WebElement searchButton = driver.findElement(By.name("btnK")); //Find By Name
@@ -39,7 +39,7 @@ public class ExampleVersion2ImplicitWait {
         WebElement searchResult = driver.findElement(By.partialLinkText("Selenium WebDriver")); //Find By partialLinkText
         highlightElement(searchResult);
         searchResult.click();
-        WebElement downloadButton = driver.findElement(By.className("downloadBox")); //Find By partialLinkText
+        WebElement downloadButton = driver.findElement(By.xpath("//a[@class='nav-item'][1]")); //Find By partialLinkText
         highlightElement(downloadButton);
         downloadButton.click();
     }

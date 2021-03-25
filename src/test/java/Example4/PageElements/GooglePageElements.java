@@ -15,7 +15,7 @@ public class GooglePageElements {
     }
 
     //Mapping web elements
-    @FindBy(id = "lst-ib")
+    @FindBy(xpath = "//div[@class='a4bIc']/input")
     protected WebElement searchBox;
 
     @FindBy(name = "btnK")

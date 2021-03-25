@@ -15,7 +15,7 @@ public class SeleniumPageElements {
     }
 
     //Mapping web elements
-    @FindBy(className = "downloadBox")
+    @FindBy(xpath = "//a[@class='nav-item'][1]")
     protected WebElement downloadButton;
 
 }
