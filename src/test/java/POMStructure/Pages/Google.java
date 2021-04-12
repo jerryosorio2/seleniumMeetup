@@ -1,4 +1,4 @@
-package Example3.Pages;
+package POMStructure.Pages;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

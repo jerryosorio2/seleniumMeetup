@@ -1,4 +1,4 @@
-package Example2;
+package WaitsStructure;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -11,9 +11,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.TimeUnit;
-
-public class ExampleVersion2ExplicitWait {
+public class ExplicitWaitStructure {
 
     WebDriver driver;
     WebDriverWait wait;

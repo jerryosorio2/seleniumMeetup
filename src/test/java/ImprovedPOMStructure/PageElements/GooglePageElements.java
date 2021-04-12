@@ -1,4 +1,4 @@
-package Example4.PageElements;
+package ImprovedPOMStructure.PageElements;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

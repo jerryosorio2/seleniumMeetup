@@ -1,28 +1,21 @@
-package Example3.Pages;
+package ImprovedPOMStructure.PageActions;
 
+import ImprovedPOMStructure.PageElements.SeleniumPageElements;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Selenium {
+public class Selenium extends SeleniumPageElements {
 
-    WebDriver driver;
     WebDriverWait wait;
 
     public Selenium(WebDriver driver, WebDriverWait wait) {
-        this.driver = driver;
+        super(driver);
         this.wait = wait;
-        PageFactory.initElements(driver, this);
     }
 
-
-    //Mapping web elements
-    @FindBy(xpath = "//a[@class='nav-item'][1]")
-    private WebElement downloadButton;
 
     public void seleniumPageActions() {
         clickDownloadBox();

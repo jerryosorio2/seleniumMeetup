@@ -1,6 +1,6 @@
-package Example4.PageActions;
+package ImprovedPOMStructure.PageActions;
 
-import Example4.PageElements.GooglePageElements;
+import ImprovedPOMStructure.PageElements.GooglePageElements;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
