@@ -15,6 +15,7 @@ Dependencies
 ```bash
 Java 13
 Selenium 3.141.59
+IntelliJ
 ```
 
 Execute test
